@@ -41,7 +41,7 @@ jobs:
   apply:
     runs-on: ubuntu-latest
     needs: terraform
-    environment: production   # 👈 Manual approval configure कर repo settings मध्ये
+    environment: production
     permissions:
       id-token: write
       contents: read
