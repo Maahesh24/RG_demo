@@ -31,15 +31,12 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-        working-directory: ./RG_demo   # 👈 तुझ्या .tf files जिथे आहेत
 
       - name: Terraform Validate
         run: terraform validate
-        working-directory: ./RG_demo
 
       - name: Terraform Plan
         run: terraform plan
-        working-directory: ./RG_demo
 
   apply:
     runs-on: ubuntu-latest
@@ -65,4 +62,3 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
-        working-directory: ./RG_demo
